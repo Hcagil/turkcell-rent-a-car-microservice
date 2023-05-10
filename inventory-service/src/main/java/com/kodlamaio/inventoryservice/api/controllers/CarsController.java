@@ -21,7 +21,7 @@ import java.util.UUID;
 public class CarsController {
     private final CarService service;
 
-    @GetMapping("/")
+    @GetMapping()
     public List<GetAllCarsResponse> getAll() {
         return service.getAll();
     }
